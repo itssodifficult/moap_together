@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryVariant">#3700B3</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+    <color name="colorSecondary">#03DAC5</color>
+    <color name="colorSecondaryVariant">#018786</color>
+    <color name="colorOnSecondary">#000000</color>
+    <color name="mint">#98FF98</color>
+    <color name="light_gray">#D3D3D3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color> <!-- black 색상 정의 -->
+    <color name="sky_blue">#87CEEB</color> <!-- 하늘색 추가 -->
+    <color name="light_yellow">#FFF9C4</color> <!-- 연한 노란색 추가 -->
+    <color name="green">#00FF00</color>
+    <color name="your_color">#00BFFF</color>
+    <color name="fluorescent_blue">#00BFFF</color>
+</resources>

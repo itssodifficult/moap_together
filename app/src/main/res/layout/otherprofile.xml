@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:padding="16dp"
+android:background="@color/white">
+
+<ImageView
+    android:id="@+id/img_profile"
+    android:layout_width="200dp"
+    android:layout_height="160dp"
+    android:layout_gravity="center"
+    android:layout_marginTop="32dp"
+    android:layout_marginBottom="24dp"
+    android:clipToOutline="true"
+    android:contentDescription="Profile Image"
+    android:elevation="4dp"
+    android:scaleType="centerCrop"
+    android:src="@drawable/logo" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="16dp"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="닉네임: "
+        android:layout_gravity="center_vertical"
+        android:paddingEnd="8dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-medium" />
+
+    <EditText
+        android:id="@+id/et_nickname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:hint="Nickname"
+        android:inputType="text"
+        android:enabled="false"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:background="@android:color/transparent"
+        android:fontFamily="sans-serif" />
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="12dp"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="나이: "
+        android:layout_gravity="center_vertical"
+        android:paddingEnd="8dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-medium" />
+
+    <EditText
+        android:id="@+id/et_age"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:hint="Age"
+        android:inputType="number"
+        android:enabled="false"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:background="@android:color/transparent"
+        android:fontFamily="sans-serif" />
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="12dp"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="한 줄 소개: "
+        android:layout_gravity="center_vertical"
+        android:paddingEnd="8dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-medium" />
+
+    <EditText
+        android:id="@+id/et_introduction"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:hint="Introduction"
+        android:inputType="text"
+        android:enabled="false"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:background="@android:color/transparent"
+        android:fontFamily="sans-serif" />
+</LinearLayout>
+
+<View
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:layout_weight="1" />
+
+<Button
+    android:id="@+id/button"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="24dp"
+    android:text="1:1 대화하기"
+    android:backgroundTint="#03A9F4"
+    android:textColor="@color/white"
+    android:textSize="16sp"
+    android:fontFamily="sans-serif-medium"
+    android:elevation="4dp"
+    android:layout_marginTop="32dp"
+    android:padding="12dp" />
+
+</LinearLayout>

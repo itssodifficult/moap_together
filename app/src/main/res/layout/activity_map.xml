@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapActivity">
+    <fragment
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/googleMap"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        map:cameraTargetLat="35.865"
+        map:cameraTargetLng="128.593"
+        map:cameraZoom="15"
+        tools:ignore="MissingClass" />
+</LinearLayout>

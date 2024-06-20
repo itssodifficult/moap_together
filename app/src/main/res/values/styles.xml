@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- 다른 테마 속성들 -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="popupTheme">@style/AppTheme.PopupOverlay</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <!-- 팝업 메뉴 관련 속성들 -->
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="Theme.AppCompat.Light">
+
+    </style>
+
+    <style name="PopupMenu" parent="Widget.AppCompat.PopupMenu">
+        <!-- 팝업 메뉴 관련 속성들 -->
+    </style>
+</resources>

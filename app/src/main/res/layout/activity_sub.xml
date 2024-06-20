@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/product_list_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:background="#FFFFFF">
+
+    <!-- 상단 공지 메시지 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!-- GS25 로고 -->
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logo"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="-20dp"/>
+
+        <!-- 1+1 행사 상품 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1+1 행사 상품"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginTop="-35dp"/>
+    </LinearLayout>
+
+
+
+    <!-- 메인 상품 리스트 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:fontFamily="sans-serif"
+        android:textSize="0sp"
+        android:paddingTop="15dp">
+
+        <!-- 상품 아이템 15 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="3dp"
+            android:orientation="vertical">
+
+            <!-- 상품 이미지 -->
+            <ImageView
+                android:id="@+id/product_image_7"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/product_106"
+                android:adjustViewBounds="true"
+                android:maxWidth="120dp"
+                android:maxHeight="120dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="7dp" />
+
+            <!-- 상품 제목 -->
+            <TextView
+                android:id="@+id/product_title_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="쿠캣)뿌먹호떡180G"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:gravity="center_horizontal" />
+
+            <!-- 상품 가격 -->
+            <TextView
+                android:id="@+id/product_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3900원"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:gravity="center_horizontal" />
+
+        </LinearLayout>
+
+        <!-- 상품 아이템 16 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="3dp"
+            android:orientation="vertical">
+
+            <!-- 상품 이미지 -->
+            <ImageView
+                android:id="@+id/product_image_8"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/product_107"
+                android:adjustViewBounds="true"
+                android:maxWidth="120dp"
+                android:maxHeight="120dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="7dp" />
+
+            <!-- 상품 제목 -->
+            <TextView
+                android:id="@+id/product_title_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="하림)돌아온매콤후랑크70G"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:gravity="center_horizontal" />
+
+            <!-- 상품 가격 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2300원"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:gravity="center_horizontal" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 메인 상품 리스트 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:fontFamily="sans-serif"
+        android:textSize="0sp"
+        android:paddingTop="15dp">
+
+        <!-- 상품 아이템 17 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="3dp"
+            android:orientation="vertical">
+
+            <!-- 상품 이미지 -->
+            <ImageView
+                android:id="@+id/product_image_9"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/product_108"
+                android:adjustViewBounds="true"
+                android:maxWidth="120dp"
+                android:maxHeight="120dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="7dp" />
+
+            <!-- 상품 제목 -->
+            <TextView
+                android:id="@+id/product_title_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CJ)닭가슴살소시지(청양)80G"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:gravity="center_horizontal" />
+
+            <!-- 상품 가격 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2900원"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:gravity="center_horizontal" />
+
+        </LinearLayout>
+
+        <!-- 상품 아이템 18 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="3dp"
+            android:orientation="vertical">
+
+            <!-- 상품 이미지 -->
+            <ImageView
+                android:id="@+id/product_image_10"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/product_109"
+                android:adjustViewBounds="true"
+                android:maxWidth="120dp"
+                android:maxHeight="120dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="7dp" />
+
+            <!-- 상품 제목 -->
+            <TextView
+                android:id="@+id/product_title_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="훼밀리)빅라티아오(마라맛쫀드기)"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:gravity="center_horizontal" />
+
+            <!-- 상품 가격 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1600원"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:gravity="center_horizontal" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 메인 상품 리스트 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:fontFamily="sans-serif"
+        android:textSize="0sp"
+        android:paddingTop="15dp">
+
+        <!-- 상품 아이템 19 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="3dp"
+            android:orientation="vertical">
+
+            <!-- 상품 이미지 -->
+            <ImageView
+                android:id="@+id/product_image_11"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/product_110"
+                android:adjustViewBounds="true"
+                android:maxWidth="120dp"
+                android:maxHeight="120dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="7dp" />
+
+            <!-- 상품 제목 -->
+            <TextView
+                android:id="@+id/product_title_11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="아띠)PPG참깨/밀크비스킷스틱"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:gravity="center_horizontal" />
+
+            <!-- 상품 가격 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1700원"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:gravity="center_horizontal" />
+
+        </LinearLayout>
+
+        <!-- 상품 아이템 20 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="3dp"
+            android:orientation="vertical">
+
+            <!-- 상품 이미지 -->
+            <ImageView
+                android:id="@+id/product_image_12"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/product_111"
+                android:adjustViewBounds="true"
+                android:maxWidth="120dp"
+                android:maxHeight="120dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="7dp" />
+
+            <!-- 상품 제목 -->
+            <TextView
+                android:id="@+id/product_title_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="아띠)PPG치즈/치브비스킷스틱"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:gravity="center_horizontal" />
+
+            <!-- 상품 가격 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1700원"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:gravity="center_horizontal" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- 페이징 버튼 등 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+
+        <!-- 이전 버튼 -->
+        <Button
+            android:id="@+id/previous_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="이전"
+            android:textColor="#000000"
+            android:background="#FFFFFF"
+            android:layout_marginEnd="10dp" />
+
+        <!-- 페이지 번호 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginEnd="10dp" />
+
+        <!-- 다음 버튼 -->
+        <Button
+            android:id="@+id/next_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="다음"
+            android:textColor="#000000"
+            android:background="#FFFFFF" />
+    </LinearLayout>
+
+</LinearLayout>

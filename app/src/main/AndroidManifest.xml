@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication" >
+
+    <!-- Google Map API 버전 2 -->
+    <uses-feature
+        android:required="true"
+    android:glEsVersion="0x00020000" />
+    <!-- 구글 지도(맵)를 사용하기 위한 인터넷 접속, 외부 저장소 접근 등의 권한을 허가 -->
+    <permission
+        android:name="com.cookandroid.cookmap.permission.MAPS_RECEIVE"
+        android:label="signature">
+    </permission>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    //////
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
+    <uses-permission android:name="android.permission.USE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    //////
+
+    <meta-data
+        android:name ="com.google.android.gms.version"
+        android:value = "@integer/google_play_services_version" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/AppTheme"
+        android:name=".Se_Application">
+
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoadingActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MapActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+        </activity>
+
+        ////
+        <activity android:name=".CalenderActivity" />
+        <activity android:name=".CalenderAlarmActivity" />
+
+        <!-- AlarmReceiver declaration -->
+        <receiver android:name=".AlarmReceiver" android:exported="true" />
+        ////
+        <activity android:name=".ChattingListActivity"/>
+        <activity android:name=".PersonalChatActivity"/>
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".OtherProfileActivity" />
+        <activity android:name=".ChatActivity"/>
+        <activity android:name=".FirstPageActivity"/>
+        <activity android:name=".SubActivity" />
+        <activity android:name=".SubActivity2" />
+        <activity android:name=".SubActivity3"/>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyADKtgXP18J0arTMTKY3YCFtcvW9pysXlo" />
+        <meta-data
+            android:name="com.google.android.geo.DIRECTIONS_API_KEY"
+            android:value="AIzaSyDHQEIQgFC5vjnEjNCtyKvyfpVoYBd4yiQ" />
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+    </application>
+</manifest>

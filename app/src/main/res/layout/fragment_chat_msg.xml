@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="?actionBarSize"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
+        android:name="com.example.myapplication.ChatMsgFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layoutManager="LinearLayoutManager"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:listitem="@layout/custom_chat_msg" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="16dp">
+
+        <EditText
+            android:id="@+id/content_et"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_content_et"
+            android:padding="8dp"
+            android:hint="메시지를 입력하세요." />
+
+        <ImageView
+            android:id="@+id/send_iv"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:backgroundTint="#3F51B5"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_send"
+            android:clickable="true" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
