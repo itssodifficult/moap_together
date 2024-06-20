@@ -23,7 +23,7 @@ public class AlarmReceiver extends BroadcastReceiver {
                 notificationManager.createNotificationChannel(channel);
             }
         }
-
+//
         String notificationTitle = context.getString(R.string.app_name);
         String notificationContent = intent.getStringExtra("notification_content");
 
